@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f3f3f3;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+#buscador {
+    width: 320px;
+    max-width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: white;
+    outline: none;
+}
+
+#buscador:focus {
+    border-color: #39b54a;
+}
+
+#lista-personas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.tarjeta-persona {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+}
+
+.tarjeta-persona h3 {
+    margin: 0 0 8px;
+    color: #39a94b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tarjeta-persona p {
+    margin: 7px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.tarjeta-persona strong {
+    color: #444;
+}
+
+.btn-detalle {
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #39b54a;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-detalle:hover {
+    background-color: #319b40;
+}
+
+#estado-carga,
+#estado-error,
+#estado-sin-resultados {
+    padding: 12px 15px;
+    margin: 20px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+#modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal-contenido {
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.modal-contenido h2 {
+    margin-top: 0;
+    color: #39a94b;
+}
+
+.modal-contenido p {
+    font-size: 14px;
+    color: #555;
+}
+
+.modal-contenido {
+    position: relative;
+}
+
+#cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border: 0;
+    background-color: transparent;
+    color: #777;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#cerrar-modal:hover {
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px;
+    }
+
+    #lista-personas {
+        grid-template-columns: 1fr;
+    }
+
+    #buscador {
+        width: 100%;
+    }
+}
