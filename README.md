@@ -33,20 +33,20 @@ Aplicación web que permite consultar un directorio de personas obtenidas desde 
 
 ## Instrucciones de instalación.
 
-# 1. Clonar el repositorio
+Clonar el repositorio
 git clone <url-del-repositorio>
 cd directorio-personas
 
-# 2. Crear el entorno virtual
+Crear el entorno virtual
 python -m venv venv
 
-# 3. Activar el entorno virtual
+Activar el entorno virtual
 # En Windows (PowerShell):
 venv\Scripts\Activate.ps1
 # En macOS/Linux:
 source venv/bin/activate
 
-# 4. Instalar las dependencias
+Instalar las dependencias
 pip install -r requirements.txt
 
 
@@ -58,7 +58,7 @@ url:
 http://127.0.0.1:8000/
 
 ## Estructura del proyecto
-
+````
 directorio-personas/
 ├── .gitignore
 ├── README.md
@@ -72,17 +72,18 @@ directorio-personas/
 │   └── ...
 │
 └── personas/                  # App principal
-    ├── models.py               
-    ├── views.py                # vista index 
+    ├── models.py
+    ├── views.py                # vista index
     ├── urls.py                 # Ruta de la app
     ├── templates/personas/
     │   └── index.html          # Contenedor HTML donde JS inyecta los datos
     └── static/personas/
         ├── css/
-        │   └── estilos.css     # Diseño 
+        │   └── estilos.css     # Diseño
         └── js/
             ├── directorio.js   # Fetch a la API, filtrado y renderizado
-            └── modal.js        # Muestra el detalle 
+            └── modal.js        # Muestra el detalle
+````
 
 ## Cómo se consume el servicio web
 
