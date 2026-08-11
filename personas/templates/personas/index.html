@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de personas</title>
+    <link rel="stylesheet" href="{% static 'personas/css/estilos.css' %}">
+</head>
+<body>
+
+    <h1>Directorio de personas</h1>
+
+    <input type="text" id="buscador" placeholder="Buscar por nombre, correo o usuario...">
+
+    <div id="estado-carga"></div>
+    <div id="estado-error"></div>
+    <div id="estado-sin-resultados"></div>
+
+    <div id="lista-personas"></div>
+
+    <div id="modal" style="display:none;"></div>
+
+    <script src="{% static 'personas/js/directorio.js' %}"></script>
+    <script src="{% static 'personas/js/modal.js' %}"></script>
+</body>
+</html>
