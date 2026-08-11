@@ -50,8 +50,7 @@ cd directorio-personas
 Crear el entorno virtual con:
 python -m venv venv
 
-# Si Windows no reconoce el comando `python` 
-# puede usar el launcher alternativo:
+Si Windows no reconoce el comando `python`  puede usar el launcher alternativo:
 py -m venv venv
 
 Activar el entorno virtual
