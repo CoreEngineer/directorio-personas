@@ -12,7 +12,6 @@ Aplicación web que permite consultar un directorio de personas obtenidas desde 
 **Detalle en modal**
 ![Detalle de una persona en modal](docs/screenshots/Modal.png)
 
-
 ## Tecnologías utilizadas
 
 - Python — lenguaje base del backend.
@@ -48,7 +47,7 @@ Clonar el repositorio
 git clone <url-del-repositorio>
 cd directorio-personas
 
-Crear el entorno virtual
+Correr para poder crear el entorno virtual:
 python -m venv venv
 
 Activar el entorno virtual
