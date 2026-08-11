@@ -47,7 +47,7 @@ Clonar el repositorio
 git clone <url-del-repositorio>
 cd directorio-personas
 
-Correr para poder crear el entorno virtual:
+Crear el entorno virtual con:
 python -m venv venv
 
 Activar el entorno virtual
