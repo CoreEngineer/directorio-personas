@@ -2,6 +2,17 @@
 
 Aplicación web que permite consultar un directorio de personas obtenidas desde un servicio externo, mostrando su información principal en un listado, con búsqueda en tiempo real y detalle ampliado mediante una ventana modal. La interfaz es responsiva y contempla los distintos estados de carga (cargando, sin resultados, error).
 
+## Vista previa
+**Listado de personas**
+![Listado de personas](docs/screenshots/Listado.png)
+
+**Búsqueda en tiempo real**
+![Búsqueda filtrando resultados](docs/screenshots/Busqueda.png)
+
+**Detalle en modal**
+![Detalle de una persona en modal](docs/screenshots/Modal.png)
+
+
 ## Tecnologías utilizadas
 
 - Python — lenguaje base del backend.
